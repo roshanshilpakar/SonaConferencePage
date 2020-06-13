@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <link rel="icon" href="image/logo.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="stylec.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+        }
+        
+        table td:hover {
+            background-color: rgb(255, 197, 206);
+        }
+        
+        table.center {
+            width: 60%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        
+        table,
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+    </style>
+    <title>Registration Form</title>
+
+</head>
+
+<body>
+
+    <nav class="nav navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand">
+            <img src="image/logo.jpg" height="60" width="150">
+        </a>
+        <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/sonacollege/" style="color: rgba(47, 47, 255, 0.808);"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://twitter.com/sonacollege?lang=en" style="color: skyblue;"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/school/sona-college-of-technology/" style="color: blue;"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/sonacollege/?hl=en" style="color: purple;"><i class="fa fa-instagram"></i></a>
+            <!--<a href="http://www.whatsapp.com" style="color: green;"><i class="fa fa-whatsapp"></i></a>-->
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class='fas fa-home' style='font-size:20px;color: white;margin-right: 7px;'></i>HOME</a></li>
+                <li class="nav-item"><a href="conference.html#aboutsona" class="nav-link"><i class='fas fa-graduation-cap' style='font-size:20px;color: white;margin-right: 7px;'></i>ABOUT SONA</a></li>
+                <li class="nav-item"><a href="conference.html#aboutconference" class="nav-link"><i class='fas fa-file-alt' style='font-size:20px;color: white;margin-right: 7px;'></i>ABOUT CONFERENCE</a></li>
+                <li class="nav-item"><a href="conference.html#callforpapers" class="nav-link"><i class='fas fa-book-reader' style='font-size:20px;color: white;margin-right: 7px;'></i>CALL FOR PAPERS</a></li>
+                <li class="nav-item">
+                    <a href="conference.html#date" class="nav-link"> <i class='far fa-calendar-alt' style='font-size:20px;color: white;margin-right: 7px;'></i>DATES TO REMEMBER</a>
+                </li>
+                <li class="nav-item"><a href="conference.html#registration" class="nav-link"><i class='fas fa-edit' style='font-size:20px;color: white;margin-right: 7px;'></i>REGISTRATION</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link"><i class='fas fa-address-book' style='font-size:20px;color: white;margin-right: 7px;'></i>CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <h3 style="text-align: center;">REGISTRATION FORM</h3>
+    <div style="text-align: center;">
+        <form method="POST" action="insert.php">
+            <table class="center">
+                <tr>
+                    <td>
+                        <b> Registration Details:</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Full Name</td>
+                    <td> : </td>
+                    <td>
+                        <input type="text" placeholder="Your full Name" name="username">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Highest Qualification
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <input type="text" placeholder="Your highest qualification" name="qualification">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Designation/Affliation</td>
+                    <td> : </td>
+                    <td>
+                        <input type="text" placeholder="designation/affliation" name="designation">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        College/University
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <input type="text" placeholder="college/university name" name="study">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="gender" value="m"> Male
+                        <input type="radio" name="gender" value="f"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        E-mail Address
+                    </td>
+                    <td> : </td>
+                    <td>
+                        <input type="mail" placeholder="Your email id" name="email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Phone No.</td>
+                    <td>:</td>
+                    <td>
+                        <select name="phoneCode">
+                            <option selected hidden value="">Select Code</option>
+                            <option value="91">91</option>
+                            <option value="977">977</option>
+                            <option value="61">61</option>
+                            <option value="63">63</option>
+                        </select>
+                        <input type="Phone" placeholder="**********" name="phone">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="submit" name="">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <br>
+    <br>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+
+            <p class="card-text" align="center">
+                All correspondence to be sent to: <br>
+                <a style="color:#db9a29"><b>THE CONVENOR, NAC-CISS '20</b></a><br> Department of Computer Science & Engineering <br> Sona College of Technology
+                <br><i style='font-size:24px' class='fas'>&#xf3c5;</i>Junction Main Road, Salem 636 005. Tamilnadu, India.
+                <br>Mobile: <a href="tel:+919942160770" style="color: burlywood;">91 99421 60770</a> , <a href="tel:+919443779386" style="color: burlywood;">94437 79386</a> | Phone: <a href="tel:04274099740" style="color: burlywood;">0427-4099740</a>
+                <br>Email: <a href="mailto:nac-ciss20@sonatech.ac.in" style="color: burlywood;">nac-ciss20@sonatech.ac.in</a>I Website: <a style="color: burlywood;" href="#">www.sonatech.ac.in/nac-ciss</a>
+                <br>
+            </p>
+            <p class="card-text" align="right" style="color: yellow;">© 2020 Sona College of Technology. All Rights Reserved. </p>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

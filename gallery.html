@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View photos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <link rel="icon" href="image/logo.jpg" type="image/gif" sizes="16x16">
+    <!--<link rel="stylesheet" href="gallarystyle.css" type="text/css" />-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylec.css">
+    <link rel="stylesheet" href="stylec.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        
+        .gallary {
+            border: 1 px solid #ccc;
+        }
+        
+        .gallary img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .des {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 20%;
+        }
+        
+        .social-icons {
+            text-align: right;
+            flex-grow: 10;
+            font-size: 25px;
+        }
+        
+        .social-icons i {
+            margin: 0 20px;
+            cursor: pointer;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 50%;
+                margin: 6px 0;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand">
+            <img src="image/logo.jpg" height="50" width="150">
+        </a>
+        <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/sonacollege/" style="color: rgba(47, 47, 255, 0.808);"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://twitter.com/sonacollege?lang=en" style="color: skyblue;"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/school/sona-college-of-technology/" style="color: blue;"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/sonacollege/?hl=en" style="color: purple;"><i class="fa fa-instagram"></i></a>
+            <!--<a href="http://www.whatsapp.com" style="color: green;"><i class="fa fa-whatsapp"></i></a>-->
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class='fas fa-home' style='font-size:20px;color: white;margin-right: 7px;'></i>HOME</a></li>
+                <li class="nav-item"><a href="conference.html#aboutsona" class="nav-link"><i class='fas fa-graduation-cap' style='font-size:20px;color: white;margin-right: 7px;'></i>ABOUT SONA</a></li>
+                <li class="nav-item"><a href="conference.html#aboutconference" class="nav-link"><i class='fas fa-file-alt' style='font-size:20px;color: white;margin-right: 7px;'></i>ABOUT CONFERENCE</a></li>
+                <li class="nav-item"><a href="conference.html#callforpapers" class="nav-link"><i class='fas fa-book-reader' style='font-size:20px;color: white;margin-right: 7px;'></i>CALL FOR PAPERS</a></li>
+                <li class="nav-item">
+                    <a href="conference.html#date" class="nav-link"> <i class='far fa-calendar-alt' style='font-size:20px;color: white;margin-right: 7px;'></i>DATES TO REMEMBER</a>
+                </li>
+                <li class="nav-item"><a href="conference.html#registration" class="nav-link"><i class='fas fa-edit' style='font-size:20px;color: white;margin-right: 7px;'></i>REGISTRATION</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link"><i class='fas fa-address-book' style='font-size:20px;color: white;margin-right: 7px;'></i>CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br>
+    <br>
+
+
+    <h2 style='text-align: center;'>Achievements of Computer Science and Engineering</h2>
+
+    <!--<div class="slide-container">
+        <span id="slider-image-one"></span>
+        <span id="slider-image-two"></span>
+        <span id="slider-image-three"></span>
+        <span id="slider-image-four"></span>
+        <span id="slider-image-five"></span>
+        <span id="slider-image-six"></span>
+        <span id="slider-image-seven"></span>
+        <span id="slider-image-eight"></span>
+        <div class="image-container">
+            <img src="one.jpg" class="slider-image">
+            <img src="two.jpg" class="slider-image">
+            <img src="three.jpg" class="slider-image">
+            <img src="four.jpg" class="slider-image">
+            <img src="five.jpg" class="slider-image">
+            <img src="six.jpg" class="slider-image">
+            <img src="seven.jpg" class="slider-image">
+            <img src="eight.jpg" class="slider-image">
+        </div>
+        <div class="button-container">
+            <a href="#slider-image-one" class="slider-button"></a>
+            <a href="#slider-image-two" class="slider-button"></a>
+            <a href="#slider-image-three" class="slider-button"></a>
+            <a href="#slider-image-four" class="slider-button"></a>
+            <a href="#slider-image-five" class="slider-button"></a>
+            <a href="#slider-image-six" class="slider-button"></a>
+            <a href="#slider-image-seven" class="slider-button"></a>
+            <a href="#slider-image-eight" class="slider-button"></a>
+
+        </div>
+    </div>-->
+    <!--First image-->
+
+    <div class="responsive">
+        <div class="gallary">
+            <a href="one.jpg" target="_blank"><img src="one.jpg" width="300" height="200"></a>
+            <div class="des">Conducted Connect’19.2(Parents Teachers Meet) for IV Year B.E (CSE) students on 13.07.2019 at 10.30 am at GT hall.</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallary">
+            <a href="two.jpg" target="_blank"><img src="two.jpg" width="300" height="200"></a>
+            <div class="des">Department of computer science and Engineering is organizing a One Credit Course on “Robotic Process Automation” for the Third year CSE students from 20.09.2019 to 21.09.2019. The course is delivered by the industry expert team Mr.Chin Ramamoorthi
+                and Team VEE Technologies, Bangalore at Charles Babbage Lab, Green Building I Floor.</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallary">
+            <a href="three.jpg" target="_blank"><img src="three.jpg" width="300" height="200"></a>
+            <div class="des">Department of Computer Science and Engineering is organizing an Industry mentor session on “Work with Multimedia” for the Third year CSE students on 14.09.2019. The course is delivered by the industry expert Mr. Arasakumar Perumal, Lead Video
+                Editor at Zero Gravity Photography, Chennai at GT Hall.</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallary">
+            <a href="four.jpg" target="_blank"><img src="four.jpg" width="300" height="200"></a>
+            <div class="des">Department of computer science and Engineering is organizing an Industry mentor session on “Cloud Computing & Cloud based IoT Application” for the Final year CSE and II year ME CSE students on 14.09.2019. The course is delivered by the industry
+                expert Mr. J Saravanabhavan, Software Engineer at Cisco at GT Hall.</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallary">
+            <a href="five.jpg" target="_blank"><img src="five.jpg" width="300" height="200"></a>
+            <div class="des">Conducted Connect’19.3(Parents Teachers Meet) for II Year B.E (CSE) students on 07.09.2019 at 10.30 am.at GT hall.</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallary">
+            <a href="six.jpg" target="_blank"><img src="six.jpg" width="300" height="200"></a>
+            <div class="des">Department of computer science and Engineering is organizing an Industry mentor session on “UNDECIDABILITY PROBLEMS-Computational Complexity, NP Completeness – SAT, CLIQUE and PDA to MultiStack” for the III year CSE students on 04.10.2019.
+                The course is delivered by the industry expert Ms. Catherine Swismitha, Test Lead at Cisco Systems Pvt. Ltd., Bangalore at GT Hall.</div>
+        </div>
+    </div>
+    <!--
+    <div class="responsive">
+        <div class="gallary">
+            <a href="seven.jpg" target="_blank"><img src="seven.jpg" width="300" height="200"></a>
+            <div class="des">Department of Computer Science and Engineering is organizing an Intra college Software-Expo “SPARK’19”on 03.10.2019.</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallary">
+            <a href="eight.jpg" target="_blank"><img src="eight.jpg" width="300" height="200"></a>
+            <div class="des">Department of Computer Science and Engineering is organizing a Guest Lecture for the final year CSE students on 04.10.2019. The resource person is Mr.Prakatheesh T J, Junior Data Scientist, Vee Technologies Salem at GT Hall.</div>
+        </div>
+    </div>-->
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+
+            <p class="card-text" align="center">
+                All correspondence to be sent to: <br>
+                <a style="color:#db9a29"><b>THE CONVENOR, NAC-CISS '20</b></a><br> Department of Computer Science & Engineering <br> Sona College of Technology
+                <br><i style='font-size:24px' class='fas'>&#xf3c5;</i>Junction Main Road, Salem 636 005. Tamilnadu, India.
+                <br>Mobile: <a href="tel:+919942160770" style="color: burlywood;">91 99421 60770</a> , <a href="tel:+919443779386" style="color: burlywood;">94437 79386</a> | Phone: <a href="tel:04274099740" style="color: burlywood;">0427-4099740</a>
+                <br>Email: <a href="mailto:nac-ciss20@sonatech.ac.in" style="color: burlywood;">nac-ciss20@sonatech.ac.in</a>I Website: <a style="color: burlywood;" href="#">www.sonatech.ac.in/nac-ciss</a>
+                <br>
+            </p>
+            <p class="card-text" align="right" style="color: yellow;">© 2020 Sona College of Technology. All Rights Reserved. </p>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

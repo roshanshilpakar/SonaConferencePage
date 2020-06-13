@@ -1,0 +1,36 @@
+.section h2 {
+    text-align: center;
+    font-size: 4vw;
+    color: rgb(4, 0, 255);
+}
+
+.section p {
+    margin-top: 2cm;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.btn {
+    margin-left: 45%;
+}
+
+.social-icons {
+    text-align: right;
+    flex-grow: 10;
+    font-size: 25px;
+}
+
+.social-icons i {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+
+/*
+span b{
+    border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px yellow;
+    background-color: red;
+    border-radius: 5px;
+}*/
